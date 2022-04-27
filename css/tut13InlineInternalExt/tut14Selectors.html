@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* Element Selector */
+        p {
+            border: 1px solid red;
+        }
+        /* class selector */
+        .redBorder {
+            color: blue;
+        }
+        /* id selector */
+        #selectId {
+            background-color: yellow;
+        }
+        /* group selector */
+        span, #selectId {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>This is a para</p>
+    <div>
+        <p class="redBorder">This is a red border para to demonstrate class</p>
+    </div>
+    <span>This is a span</span>
+    <p id="selectId" class="redBorder">This is id selector example</p>
+</body>
+</html>
