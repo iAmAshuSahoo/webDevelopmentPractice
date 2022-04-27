@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input Tags</title>
+</head>
+<body>
+    <h1>This is user form demonstrating the various form tags</h1>
+    <!-- action attribute is used to send the data to the backend -->
+    <form action="backend.php">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <!-- the backend recognises the tag by the name attribute -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="myEmail" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="bonus">Bonus:</label>
+            <input type="number" name="myBonus" id="bonus">
+        </div>
+        <br>
+        <div>
+            <label for="Gender">Gender:</label>
+            <input type="radio" name="myGender" id="Gender" checked> Male
+            <input type="radio" name="myGender" id="Gender"> Female
+            <input type="radio" name="myGender" id="Gender"> Other
+        </div>
+        <br>
+        <div>
+            <label for="hobby">Hobby:</label>
+            <input type="checkbox" name="myHobby" id="hobby" checked>Singing
+            <input type="checkbox" name="myHobby" id="hobby">Dancing
+            <input type="checkbox" name="myHobby" id="hobby">Reading
+        </div>
+        <br>
+        <div>
+            <label for="unit">Department:</label>
+            <select name="department" id="unit">
+                <option value="">--Select--</option>
+                <option value="cloud">Cloud</option>
+                <option value="program">Programmer</option>
+                <option value="android">Android</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="myDate">Date of Birth:</label>
+            <input type="date" name="myDate" id="myDate">
+        </div>
+        <br>
+        <div>
+            <label for="self">Write about yourself:</label><br>
+            <textarea name="self" id="self" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" name="submit" id="submit" value="Submit Now"> 
+            <input type="reset" name="reset" id="reset" value="Rest Now"> 
+        </div>
+        <br>
+    </form>
+</body>
+</html>
