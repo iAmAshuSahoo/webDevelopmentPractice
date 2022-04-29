@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            width: 400px;
+            height: 250px;
+            margin: 30px auto;
+            border-radius: 30px;
+            background-color: #342e2e;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #flash {
+            border: 2px solid black;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 30px;
+            right: 50px;
+            border-radius: 100px;
+            background-color: #eaf5ff;
+        }
+        #lens-border {
+            border: 2px solid #494949;
+            width: 170px;
+            height: 170px;
+            position: absolute;
+            border-radius: 100px;
+            background-color: #746565;
+            top: 40px;
+            right: 150px;
+        }
+        #outer-lens {
+            border: 2px solid black;
+            width: 130px;
+            height: 130px;
+            position: absolute;
+            top: 17px;
+            right: 18px;
+            border-radius: 40px;
+            background-color: #a9a9a9;
+        }
+        #inner-lens {
+            border: 2px solid black;
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            top: 16px;
+            left: 18px;
+            border-radius: 50px;
+            background-color: #424242;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="flash"></div>
+        <div id="lens-border">
+            <div id="outer-lens">
+                <div id="inner-lens"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
