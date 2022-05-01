@@ -1,0 +1,104 @@
+body {
+    margin: 0px;
+    font-family: 'Lexend Peta', sans-serif;
+    font-family: 'Merriweather', serif;
+    background: url(../images/main.jpg);
+    background-size: 140%;
+    color: #251D3A;
+    font-weight: 700;
+}
+
+#left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#left img {
+    width: 60px;
+    margin: auto;
+    display: block;
+}
+
+#navbar li {
+    display: inline-block;
+}
+
+.nav-li {
+    color: #251D3A;
+    text-decoration: none;
+    margin: 8px 15px;
+}
+
+.nav-li:hover {
+    color: #FF7700;
+}
+
+.active {
+    color: #2A2550;
+    text-decoration: underline;
+}
+
+#site-name {
+    line-height: 2;
+    font-size: 14px;
+}
+
+#center {
+    width: 45%;
+    margin: 35px auto;
+}
+
+#right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.btn {
+    margin: 5px 9px;
+    padding: 5px 9px;
+    font-size: 12px;
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: #31c1ff;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #FF7700;
+}
+
+.container {
+    border: 2px solid black;
+    width: 45%;
+    margin: 80px auto;
+    border-radius: 10px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.form-group {
+    display: block;
+    font-size: 15px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    background-color: #c6f2f2;
+    color: black;
+    padding: 5px 70px;
+    width: 40%;
+    margin: 5px auto;
+    border-radius: 10px;
+    border-color: #c6f2f2;
+    font-weight: 700;
+}
+
+.container .btn {
+    width: 65%;
+    margin: 15px auto;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
