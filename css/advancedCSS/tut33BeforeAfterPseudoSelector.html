@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before After Psedo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&family=Merriweather&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lexend Peta', sans-serif;
+            font-family: 'Merriweather', serif;
+            /* background-color: black;
+            color: white; */
+        }
+        header::before {
+            background: url(./food.jpg) no-repeat center center/cover;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            opacity: 0.3;
+
+        }
+        .navigation {
+            display: flex;
+            list-style: none;
+
+        }
+        .nav-link {
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+            margin: 15px;
+        }
+        section {
+            display: flex;
+            margin: 60px 80px;
+            height: 250px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        /* section::after {
+            content: "This is content";
+        }
+        section::before {
+            content: "This is before content";
+        } */
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li><a class="nav-link" href="#">Home</a></li>
+                <li><a class="nav-link" href="#">About Us</a></li>
+                <li><a class="nav-link" href="#">Fill Form</a></li>
+                <li><a class="nav-link" href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>This is my body</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum tempore debitis soluta corporis optio porro ratione sed et adipisci officiis aperiam facilis provident illum doloribus, quia laboriosam repellat accusantium doloremque.</p>
+    </section>
+</body>
+</html>

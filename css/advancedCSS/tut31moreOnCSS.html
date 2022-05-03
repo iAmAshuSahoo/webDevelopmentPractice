@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS</title>
+    <style>
+        /* It will apply the style to "p" no matter how deep it exist in the "header" */
+        /* header p {
+            background-color: yellow;
+            color: black;
+        } */
+
+        /* header nav ul {
+            font-weight: 700;
+            color: violet;
+        } */
+
+        /* It will affect the "p" which is direct child of "div" */
+        /* div > p {
+            background-color: red;
+            color: white;
+        } */
+
+        /* It will affect the "ul" which is sibling of "p" */
+        p + ul {
+            background-color: aqua;
+            color: black;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">Logo Image</div>
+        <nav>
+            <p>Navigation window</p>
+            <ul>
+                <li class="navbar"><p>Home</p></li>
+                <li class="navbar">About</li>
+                <li class="navbar">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <div id="form-group">
+        <p>This is a para</p>
+        <ul>
+            <li><p>Maggie</p></li>
+            <li><p>Zomato</p></li>
+            <li><p>Mobile</p></li>
+        </ul>
+    </div>
+</body>
+</html>

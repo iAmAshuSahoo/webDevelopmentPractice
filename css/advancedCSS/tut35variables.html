@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        :root {
+            --success-color: green;
+            --maxh: 200px
+        }
+        .container {
+            --box-color: blue;
+            display: flex;
+            background-color: var(--box-color);
+            justify-content: center;
+            border: 2px solid red;
+            /* align-items: center; */
+            max-height: var(--maxh);
+            width: 300px;
+            margin: auto;
+        }
+        .box {
+            border: 2px solid var(--success-color);
+            /* background-color: var(--box-color); */
+            background-color: var(--danger-color);
+            margin: 5px 10px;
+            width: 100px;
+            height: 100px;
+            --danger-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

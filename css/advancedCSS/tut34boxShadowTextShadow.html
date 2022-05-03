@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box/Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        .card {
+            border: 2px solid black;
+            background-color: beige;
+            padding: 10px 20px;
+            margin: 20px 10px;
+
+            /* box-shadow: offset-x offset-y color; */
+    /* box-shadow: offset-x offset-y blur-radius color; */
+    /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+
+
+            /* box-shadow: 10px 5px red; */
+            /* box-shadow: -10px -13px green; */
+            /* box-shadow: 4px 3px 6px green; */
+            /* box-shadow: -7px -5px 10px green; */
+            box-shadow: 4px 3px 6px 3px rgb(188, 62, 12);
+            /* box-shadow: inset 3px 5px green; */
+        }
+        .card h1 {
+            /* text-shadow: 3px 4px red; */
+            /* text-shadow: 3px 2px 2px white; */
+            text-shadow: -3px -2px 5px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h1>Card 1</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil illum dolore excepturi, maxime mollitia provident sint, quae, a ipsum eum temporibus possimus necessitatibus minus tenetur in itaque commodi. Adipisci, aperiam.</p>
+            </div>
+        <div class="card" id="card2">
+            <h1>Card 2</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ipsum eius harum officia exercitationem iusto expedita obcaecati, sequi esse, ipsa aspernatur, neque vel! Explicabo distinctio numquam vero obcaecati totam voluptas!</p>
+        </div>
+        <div class="card" id="card3">
+            <h1>Card 3</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, beatae. Nisi, praesentium labore voluptatum iure culpa nulla rerum minima temporibus dolorum facere doloremque aliquid modi eius accusamus cupiditate nesciunt illo.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .box {
+            width: 50px;
+            border: 2px solid red;
+            height: 100px;
+            margin: 3px;
+            background-color: orange;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .container {
+            border: 2px solid black;
+            display: flex;
+            height: 500px;
+            width: 100%;
+
+            /* Flex property of parent  */
+            /* By default flex-direction:  is row; */
+            /* flex-direction: row;
+            flex-direction: column;
+            flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+
+            /* By default flex-wrap:  is nowrap; */
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap; */
+            /* wraps items in parent to ensure responsiveness */
+
+            /* shorthand for flex direction and flex-wrap: ; */
+            /* flex-flow: column wrap; */
+            
+            /* justify-content: to justify the elements in x axis; */
+            /* justify-content: center; */
+            /* to add space on left and right side like margin */
+            /* justify-content: space-around; */
+            /* to add space betwwen items but not on sides */
+            /* justify-content: space-between; */
+            /* to add space between items including sides */
+            /* justify-content: space-evenly; */
+
+            /* align-items: to align the elememts in y axis; */
+            /* align-items: center;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: stretch; */
+        }
+
+        #box-1 {
+            /* higher the order the later element aligns to the end */
+            /* order: 3; */
+            /* Grows when there is a empty space  */
+            /* flex-grow: 2; */
+            /* Shrink when all the space between container and item is consumed */
+            /* flex-shrink: 2; */
+            /* When flex-direction: is column height changes; */
+            /* When flex-direction: is row width changes; */
+            flex-basis: 160px;
+            /* flex: 2 2 230px; */
+        }
+        #box-2 {
+            /* order: 5; */
+            align-self: center;
+            align-self: flex-start;
+            align-self: flex-end;
+        }
+        /* #box-3 {
+            
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">box-1</div>
+        <div class="box" id="box-2">box-2</div>
+        <div class="box" id="box-3">box-3</div>
+        <div class="box" id="box-4">box-4</div>
+        <div class="box" id="box-5">box-5</div>
+    </div>
+</body>
+</html>

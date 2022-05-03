@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <!-- <style>
+        em understanding
+        .container {
+            font-size: 10px;
+        }
+        h1 {
+            border: 2px solid red;
+            text-align: center;
+        }
+        #box1 {
+            /* 3 * font-size of parent */
+            font-size: 3em; 
+            /* 2 * font-size of box  * font-size of parent */
+            padding: 2em;
+        }
+    </style> -->
+
+<style>
+    /* rem examples -  r stand for root html size */
+    html {
+        font-size: 5px
+    }
+    .container {
+        /* Suppose height of the browser is 1000px, so 1vh is equaled to (1/100)*1000= 10px. */
+        height: 100vh;
+        width: 100vw;
+        border: 2px solid black;
+
+        font-size: 10px;
+    }
+    h1 {
+        border: 2px solid red;
+        text-align: center;
+    }
+    #box1 {
+        /* 3 * font-size of html */
+        font-size: 3rem; 
+        /* 2 * font-size of html */
+        padding: 2rem;
+    }
+</style>
+</head>
+<body>
+    <!-- To make the website accessible to all web pages
+    1. Set viewport 
+    2. Use Media Queries
+    3. Use max-width/min-height
+    4. Use rem, em, vh, vw units over pixel -->
+
+    <div class="container">
+        <h1 id="box1">First</h1>
+        <h1 id="box2">Second</h1>
+        <h1 id="box3">Third</h1>
+    </div>
+</body>
+</html>
