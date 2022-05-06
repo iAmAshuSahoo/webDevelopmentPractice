@@ -1,0 +1,252 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* navigation style */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: 10;
+    top: 0px;
+}
+
+#logo{
+    margin: 10px 34px;
+}
+
+#img-logo {
+    width: 70px;
+    height: 70px;
+}
+
+#navbar ul {
+    display: flex;
+    z-index: 8;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-family: 'Kanit', sans-serif;
+    /* font-size: 15px; */
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: aliceblue;
+}
+
+#navbar::before {
+    background-color: black;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* Home Section  */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 598px;
+    padding: 3px 90px;
+    position: relative;
+    bottom: 96px;
+}
+
+#home::before {
+    background: url(../assets/salad.jpg) no-repeat center center/cover;
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.2;
+}
+
+
+/* Services section */
+#services-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 30px;
+    height: 352px;
+    position: relative;
+    bottom: 40px;
+}
+#services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-para {
+    font-size: 0.8rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 10px 5px;
+    border-radius: 20px;
+    background-color: #ececec;
+}
+
+#services .box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Clients section  */
+/* background: url(../assets/salad.jpg) no-repeat center center/cover;
+content: '';
+position: absolute;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 100%;
+z-index: -2;
+opacity: 0.2; */
+#client-container{ 
+    position: relative;
+    top: 40px;
+}
+#client-container::before {
+    content: '';
+    background: url(../assets/clientBanner.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client {
+    padding: 5px 34px;
+}
+
+.client-img {
+    height: 50px;
+    width: 50px;
+}
+
+/* Contact Us  */
+#contact {
+    position: relative;
+    top: 41px;
+}
+
+#contact-box form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#contact::before {
+    content: '';
+    background: url(../assets/contactUs.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 9px;
+    font-size: 1rem;
+} 
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+}
+
+/* footer */
+
+#footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 42px;
+}
+
+/* Utility section */
+
+.h1-primary {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.5em;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1em;
+    padding: 12px;
+}
+
+.btn {
+    padding: 3px 10px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1em;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    background-color: antiquewhite;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+
