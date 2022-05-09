@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            gap: 1rem;
+            grid-template-areas: 
+            'nav nav nav nav'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        .brd {
+            border: 2px solid black;
+            background-color: yellow;
+            padding: 12px 23px;
+        }
+        nav {
+            grid-area: nav;
+        }
+        section {
+            grid-area: section;
+        }
+        aside {
+            grid-area: aside;
+        }
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 300px) {
+            body {
+                background-color: yellow;
+            }
+            .container {
+                grid-template-areas: 
+                    'nav nav nav nav'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+        @media screen and (min-width: 301px) and (max-width: 600px) {
+            body {
+                background-color: green;
+            }
+            .container {
+                grid-template-areas: 
+                    'nav nav nav nav'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 900px) {
+            body {
+                background-color: blue;
+            }
+            .container {
+                grid-template-areas: 
+                    'nav nav nav nav'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+        }
+        @media screen and (min-width: 901px) {
+            body {
+                background-color: aquamarine;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="brd">
+            <span>Home</span>
+            <span>About Us</span>
+            <span>Services</span>
+            <span>Contact Us</span>
+        </nav>
+        <section class="brd">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt culpa asperiores dignissimos magnam accusamus praesentium dolorum magni officia, accusantium suscipit perferendis, quo animi fuga. Accusamus modi non voluptatem quasi?
+            </p> 
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, error, hic fuga voluptatem architecto debitis ullam eligendi sint perspiciatis esse nobis odit necessitatibus harum adipisci repellat in quo optio repudiandae!
+            </p>
+
+        </section>
+        <aside class="brd">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur odio deserunt quam laudantium iure mollitia nihil similique nesciunt dolore tempore amet autem possimus, unde voluptate! Officia recusandae iusto ut eius!
+        </aside>
+        <footer class="brd">Copyright @2022 Reserved </footer>
+    </div>
+</body>
+</html>

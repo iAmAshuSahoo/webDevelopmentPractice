@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Area</title>
+    <style>
+        .container {
+            display: grid;
+            gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        .item {
+            background-color: yellow;
+            border: 2px solid black;
+            padding: 12px 23px;
+        }
+        #navbar {
+            grid-area: navbar;
+        }
+        #section {
+            grid-area: section;
+        }
+        #aside {
+            grid-area: aside;
+        }
+        #footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home    Services About Us
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae illo temporibus quis architecto id aspernatur esse dicta debitis tempora omnis? Praesentium animi eaque at, ex sapiente cumque iure neque libero.
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, aut ex facere, est neque eum nobis consectetur cupiditate tempora minus fugiat ea, aperiam officiis nam enim commodi magni similique rerum.
+        </div>
+        <div id="footer" class="item">
+            Copyright @MySite
+        </div>
+    </div>
+</body>
+</html>

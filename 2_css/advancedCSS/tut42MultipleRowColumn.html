@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Multiple Row and Column</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 5fr 2fr 3fr;
+            grid-auto-rows: 1.5fr;
+            gap: 0.5rem;
+            /* row-gap: 1rem; */
+            /* column-gap: 1rem; */
+            
+
+        }
+        .item {
+            border: 2px solid red;
+            color: white;
+            background-color: rgb(106, 14, 14);
+        }
+        .item:first-child {
+            /* grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3; */
+            /* Shorthand */
+            grid-column: 1/ span 2;
+            grid-row: 1/ span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is box 1</div>
+        <div class="item">This is box 2</div>
+        <div class="item">This is box 3</div>
+        <div class="item">This is box 4</div>
+        <div class="item">This is box 5</div>
+        <div class="item">This is box 6</div>
+        <div class="item">This is box 7</div>
+        <div class="item">This is box 8</div>
+        <div class="item">This is box 9</div>
+        <div class="item">This is box 10</div>
+    </div>
+</body>
+</html>
