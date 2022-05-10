@@ -1,0 +1,368 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.container {
+    position: relative;
+}
+
+#top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #0000ff; */
+}
+
+#logo {
+    margin: auto 3rem;
+}
+
+#top-navbar ul {
+    display: flex;
+    flex-grow: 1;
+    padding: 0px;
+}
+
+#top-navbar ul li {
+    list-style: none;
+    margin: auto 1.5rem;
+}
+
+#top-navbar ul li a {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+
+}
+
+
+
+.separator {
+    border: 2px solid #eee;
+    display: block  ;
+    height: 0;
+}
+
+#secondary-navbar {
+    position: sticky;
+    top: 0px;
+    padding: 18px 0;
+}
+
+#secondary-navbar::after {
+    content: '';
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: 4;
+}
+
+#secondary-navbar ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+#secondary-navbar ul li {
+    list-style: none;
+    margin: auto 1rem;
+    z-index: 6;
+}
+
+#secondary-navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Main Background */
+
+#main-background {
+    display: flex;
+    /* border: 1px solid; */
+    font-size: 8rem;
+    font-weight: 700;
+    width: 85%;
+    height: 30rem;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#main-background::before {
+    content: '';
+    background: url(../assets/albeton-background.jpg)  no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#music-article {
+    height: 35rem;
+}
+
+.about-article {
+    font-family: 'Noto Serif', serif;
+    width: 55%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.special-text {
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+/* Equipment Section  */
+#equipment-container {
+    position: relative;
+    display: flex;
+
+}
+#equipment {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 35rem;
+}
+#equipment::before {
+    content: '';
+    height: 35rem;
+    width: 60%;
+    background-color: #fbffa7;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -2;
+}
+.sparkle-img {
+    width: 30rem;
+    height: 23rem;
+}
+.support-img {
+    width: 22rem;
+    height: 14rem;
+}
+
+
+/* Video Container  */
+#video-container {
+    margin: auto;
+    width: 55%;
+}
+
+.video-style {
+    width: 100%;
+    height: 20rem;
+}
+
+.caption {
+    font-weight: 700;
+}
+
+/* Ableton Info Section  */
+#ableton-info-container {
+    display: flex;
+    position: relative;
+}
+
+#ableton-info {
+    display: flex;
+    width: 100%;
+    height: 40rem;
+}
+#ableton-img-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 8rem;
+}
+
+#ableton-info::before {
+    content: '';
+    background-color: #b6ffc0;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  /* latest-job-layout */
+#latest-job-layout-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#latest-job-layout {
+    display: flex;
+    width: 87%;
+    height: 30rem;
+}
+
+#latest-job-layout::before {
+    content: '';
+    background-color: #b1c5ff;
+    width: 83%;
+    height: 75%;
+    position: absolute;
+    top: 0;
+    left: 8rem;
+    z-index: -2;
+}
+
+#latest-job-img {
+    height: 30rem;
+    width: 35rem;
+}
+
+#latest-job-section {
+    width: 20rem;
+    margin: 7rem auto;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1fr;
+}
+
+#primary {
+    width: 87%;
+    margin: auto;
+}
+
+#footer-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1.2fr;;
+    /* grid-template-rows: repeat(2, 9fr);
+    grid-template-columns: repeat(3, 1fr); */
+    gap: 2rem;
+    /* width: 80%; */
+    margin: auto;
+}
+
+#footer-content ul {
+    list-style: none;
+}
+
+#footer-content ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+#footer-content ul li i {
+    margin-left: 0.3rem;
+}
+
+.news-input {
+    margin-top: 0.7rem;
+}
+
+.newsletter-address {
+    background-color: #dfdfdf;
+    height: 1.5rem;
+    color: black;
+    font-size: 1rem;
+    padding: 0.2rem 0.7rem;
+    border: none;
+    opacity: 0.8;
+}
+
+.btn {
+    background-color: #0000ff;
+    height: 1.9rem;
+    color: white;
+}
+
+div ul {
+    padding: 0;
+}
+
+.specific {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+#h1-font {
+    font-size: 4rem;
+}
+
+#secondary {
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+    margin: 3rem auto;
+}
+
+#secondary ul {
+    display: flex;
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+#secondary ul li{ 
+    margin-right: 1rem;
+}
+
+#secondary ul li a { 
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Utility Classes */
+
+.orange-shade {
+    color: #ff764d !important;
+}
+
+.blue-shade {
+    color: #0000ff;
+}
+
+.mg-2rem {
+    margin-bottom: 2rem;
+}
+
+img {
+    z-index: -1;
+      /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
