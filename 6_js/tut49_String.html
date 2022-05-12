@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <div id="content1"></div>
+    <div id="content2"></div>
+    <script>
+        var str = "Hello World";
+        console.log(str);
+        var singleQuote = 'Hello World in Single Quotes';
+        console.log(singleQuote);
+        var escapeSequence = "My name is Ashu \n here we are looking at \t escape sequence. We also have \b for backspace and \\ for slash";
+        console.log(escapeSequence);
+
+
+        var name= "Ashu";
+        var channel = "iAmAshuSahoo";
+        var prevSubscriber = 100;
+        var newSubscriber = 100;
+        var show = `${name} is a youtuber. His channel is ${channel}. Total Subscriber ${prevSubscriber+newSubscriber}`;
+        console.log(show);
+
+
+        var y = new String("This is a string");
+        console.log(y);
+
+        
+        document.getElementById('content1').innerHTML = "<h3>This string is inserted by JS</h3>";
+        document.getElementById('content2').innerText = "<h3>This string is inserted by JS</h3> This is innerText";
+    </script>
+</body>
+</html>

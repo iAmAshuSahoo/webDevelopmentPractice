@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Manipulation Operations</title>
+</head>
+<body>
+    <h3>This is a String Manipulation tutorial</h3>
+    <script>
+        var str = "My name is Ashu";
+        var pos = str.indexOf("s");   // Returns first occurence of s
+        console.log(pos); 
+        console.log(str);
+
+        pos = str.lastIndexOf("s")   // Returns first occurence of s
+        console.log(pos)
+
+        //Substring
+        var substr = str.slice(1,5); // start from 1 and print till 4 OP  ==>> "y na"
+        console.log(substr);        // Allows negative values
+
+        substr = str.substring(1,5);  // start from 1 and print till 4 OP  ==>> "y na"
+        console.log("substring   ===>", substr);        // NOT Allows negative values
+
+        substr = str.slice(-6);
+        console.log("slice    ===>", substr);
+
+        substr = str.slice(-6, -1);
+        console.log("slice    ===>", substr);
+
+        substr = str.substring(-6);
+        console.log(substr);
+
+        substr = str.substr(1,4)  // Start position and length of sub string
+        console.log("substr    ===>", substr);
+        console.log(str);
+
+
+        var replaced = str.replace("Ashu","Kami");
+        console.log("replaced    ===>", replaced);
+        console.log(str);
+
+        console.log(str.toLowerCase());
+        console.log(str.toUpperCase());
+
+        var newStr = str.concat("New Str");
+        console.log("newStr    ===>",newStr);
+
+        var whiteSpaceStr = "        This     is white          ";
+        console.log(whiteSpaceStr);
+        console.log(whiteSpaceStr.trim())
+
+
+        var char2 = str.charAt(2);
+        console.log(char2);
+
+        char2 = str.charCodeAt(2);
+        console.log(char2)
+    </script>
+</body>
+</html>

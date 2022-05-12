@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array and Object</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <script>
+        let myVar = "This is a string";
+        let myVar1 = 20;
+        let myVar2 = true;
+        let myVar3 = null;
+        let myVar4 = undefined;
+
+        let emp = {
+            name: "Ashu",
+            salary: 10,
+            channel: "Ashutosh Sahoo",
+            "channel 1": "Ashu Sahoo Codes"
+        }
+        console.log(emp);
+
+        let names = ["Ashu", "Kami", "Raju", undefined, null];
+        // let names = new Array("Ashu", "Kami", "Raju", undefined, null);
+        console.table(names);
+        console.log(names.length);
+        names.push("wow");
+        console.log(names)
+        console.log(emp.channel);
+        console.log(emp["channel 1"])
+    </script>
+</body>
+</html>
