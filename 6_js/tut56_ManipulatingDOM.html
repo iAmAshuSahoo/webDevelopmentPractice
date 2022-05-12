@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating the DOM</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+            <li>Jobs</li>
+        </ul>
+    </div>
+    <div class="container">
+        Another Container
+    </div>
+    <script>
+        let main = document.getElementById('main');
+        console.log(main)
+
+        let container = document.getElementsByClassName("container");
+        console.log(container)
+        console.log(container[1])
+
+        // let listElement = document.querySelector('#main')
+        // console.log(listElement)
+
+        // let listElement = document.querySelector('#main>ul')
+        // console.log(listElement)
+
+        // let listElement = document.querySelector('#main>li');
+        // console.log(listElement)
+
+        let listElement = document.querySelectorAll('li');
+        console.log(listElement)
+        listElement[2].innerText = "Inserted Value";
+    </script>
+</body>
+</html>

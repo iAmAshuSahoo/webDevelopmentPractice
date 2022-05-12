@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners</title>
+    <style>
+        #btn {
+            background-color: red;
+            border: none;
+            font-weight: 700;
+            color: white;
+            padding: 10px 14px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>This is a para</h2>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ullam iste repellat inventore repudiandae modi, perspiciatis vitae nisi ipsa aliquid explicabo obcaecati quae facere excepturi quis sequi illum illo minus.
+    Possimus hic, illum obcaecati accusamus deleniti velit adipisci culpa nostrum rerum atque corporis, odio ipsum. Obcaecati velit in dignissimos dolorem, quisquam itaque amet, distinctio minus vero, provident corporis saepe impedit!</p>
+    <button id="btn" onclick="toggleEvent()">Show/Hide</button>
+
+    <script>
+        let para = document.getElementById("para");
+        let btn = document.getElementById("btn");
+
+        para.addEventListener("mouseover", () => {
+            console.log("Mouse is Inside")
+        })
+
+        para.addEventListener("mouseout", () => {
+            console.log("Mouse went OutISDE");
+        })
+        
+        function toggleEvent () {
+            if (para.style.display !== "none") {
+                para.style.display = "none";
+            } else {
+                para.style.display = "block"
+            }
+        }
+    </script>
+</body>
+</html>

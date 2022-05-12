@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <h1>We are learning about loops</h1>
+
+    <script>
+        array = [1,2,3];
+        for (let index = 0; index < array.length; index++) {
+            console.log(array[index]);        
+        }
+
+        array.forEach(item => {
+            console.log(item)
+        });
+
+        const friend = ["Rajeev", "Kamal", "Kishan", "Rahul"];
+
+        for (const element of friend) {
+            console.log(`${element} is my friend`);
+        }
+
+        const empObj = {
+            name: "Kamla",
+            salary: 2000,
+            skill: "Frontend Developer"
+        }
+
+        for (const key in empObj) {
+            console.log(`The ${key} of eployee is ${empObj[key]}` )
+        }
+
+
+        let i = 0;
+        while (i<4) {
+            console.log(i)
+            i++;
+        }
+
+        i = 34
+        do {
+            console.log(i)
+            i++;
+        } while (i<4)
+    </script>
+</body>
+</html>
