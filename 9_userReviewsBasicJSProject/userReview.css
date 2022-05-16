@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    background-color: #e6fcfc;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+#reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+#name {
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0; 
+}
+
+#profile {
+    border-radius: 50px;
+    background-color: aqua;
+}
+
+#profile-picture {
+    border: 1px solid blue;
+    border-radius: 100px;
+}
+
+#designation {
+    font-weight: 700;
+}
+
+#description {
+    margin: 1rem 0;
+}
+
+#btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: aqua;
+}
