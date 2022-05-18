@@ -1,0 +1,18 @@
+{
+  "name": "tut69_npm",
+  "version": "1.0.0",
+  "description": "This is the best package",
+  "main": "tut69_npm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "package"
+  ],
+  "author": "iAmAshuSahoo",
+  "license": "ISC",
+  "dependencies": {
+    "slugify": "^1.6.5"
+  }
+}
