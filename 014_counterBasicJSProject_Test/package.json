@@ -1,0 +1,27 @@
+{
+  "name": "counter-for-testing",
+  "version": "1.0.0",
+  "description": "This is to test various testing framework",
+  "main": "counter.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iAmAshuSahoo/webDevelopmentPractice.git"
+  },
+  "keywords": [
+    "testing",
+    "jest"
+  ],
+  "author": "iAmAshuSahoo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iAmAshuSahoo/webDevelopmentPractice/issues"
+  },
+  "homepage": "https://github.com/iAmAshuSahoo/webDevelopmentPractice#readme",
+  "devDependencies": {
+    "jest": "^28.1.3",
+    "jest-cli": "^28.1.3"
+  }
+}
