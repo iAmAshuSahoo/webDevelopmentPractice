@@ -2,3 +2,4 @@
     yarn global add jest or npm install jest --global
     npm install --save-dev jest-cli
     "Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted" - cannot be loaded because running scripts is disabled on this system
+2.  Jest can be used with WebPak, parcel, typescript.
