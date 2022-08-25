@@ -3,8 +3,8 @@
 // For example, let's say that fetchData returns a promise that is
 // supposed to resolve to the string 'peanut butter'. We could test it with:
 
-const fetchData = require("./async");
-// console.log(fetchData);
+const { fetchData, fetchRejectData } = require("./async");
+console.log(fetchData);
 //test fetchData()
 // function fetchData() {
 //   return setTimeout(() => {
@@ -28,5 +28,5 @@ test("data is oil -> aync and resolve", async () => {
 });
 
 test("data is oil -> async and reject", async () => {
-  await expect(fetchData()).rejects.toMatch("data is NOT oil");
+  await expect(fetchRejectData()).rejects.toMatch("It failed");
 });
